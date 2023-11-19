@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header className="app-header">
-      <h1>Profile Builder </h1>
+      <h1> REACT EXPERT </h1>
     </header>
   );
 }
