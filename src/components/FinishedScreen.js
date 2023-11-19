@@ -1,6 +1,7 @@
 import React from "react";
+import ResetButton from "./ResetButton";
 
-const FinishedScreen = ({ points, maxNumOfPoints, highscore }) => {
+const FinishedScreen = ({ points, maxNumOfPoints, highscore, dispatch }) => {
   const percentage = (points / maxNumOfPoints) * 100;
 
   return (
@@ -10,6 +11,9 @@ const FinishedScreen = ({ points, maxNumOfPoints, highscore }) => {
         {Math.ceil(percentage)}%)
       </p>
       <p className="highscore">(Highscore: {highscore} points)</p>
+      <div>
+        <ResetButton dispatch={dispatch} />
+      </div>
     </>
   );
 };
